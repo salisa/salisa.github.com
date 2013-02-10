@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+    <meta name="author" content="{{ site.author.name }}">
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap.rtl.css" rel="stylesheet">
+    <link href="{{ ASSET_PATH }}/css/style.css" rel="stylesheet" type="text/css" media="all">
+
+  <!-- favs
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <div class="content">
+        {{ content }}
+      </div>
+
+      <footer>
+        <p>  {{ 'now' | date: "%Y" }} - {{ site.author.name }} &copy; </p>
+      </footer>
+
+    </div>
+
+    {% include JB/analytics %}
+  </body>
+</html>

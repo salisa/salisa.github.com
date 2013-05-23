@@ -1,4 +1,0 @@
-User-agent: *
-Disallow: 
-
-Sitemap: http://webninja.ir/sitemap.xml 
